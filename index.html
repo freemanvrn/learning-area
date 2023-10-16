@@ -42,10 +42,11 @@
 
     async function filling() {
 
-        const requestURL = 'https://github.com/freemanvrn/learning-area/blob/main/items.json';
+        const requestURL = 'http://localhost:61253/json';
         const request = new Request(requestURL);
     
         const response = await fetch(request);
+        console.log(response);
         const category = await response.json();
 
         fillingProducts(category);
