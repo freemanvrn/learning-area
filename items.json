@@ -1,6 +1,4 @@
 {
-    "item_category" : "Cheese",
-    "active" : true,
     "products" : [
         {
             "shop" : "Libre",
