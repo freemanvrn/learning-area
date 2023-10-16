@@ -11,7 +11,7 @@
             "promo_price" : "11.90 GEL",
             "discount_%" : "20.1",
             "price_per_kilo" : "11.90 GEL",
-            "valid thru" : "20/10/2023"
+            "valid_thru" : "20/10/2023"
         },
         {
             "shop" : "Carrefour",
@@ -22,7 +22,7 @@
             "promo_price" : "65.90 GEL",
             "discount_%" : "24.3",
             "price_per_kilo" : "49.90 GEL",
-            "valid thru" : "22/10/2023"
+            "valid_thru" : "22/10/2023"
         },
         {
             "shop" : "Nikora",
@@ -33,7 +33,7 @@
             "promo_price" : "16.90 GEL",
             "discount_%" : "22.8",
             "price_per_kilo" : "16.90 GEL",
-            "valid thru" : "18/10/2023"
+            "valid_thru" : "18/10/2023"
         }
     ]
 }
