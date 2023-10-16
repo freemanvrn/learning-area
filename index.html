@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="скидки Грузия">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Скидки Грузия</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <a>
+                <img src="img/logo.jpg" width="200" height="150" alt="Логотип главный">
+            </a>
+            <form class="header-form">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit" name="submit" class="submit"><img src="img/magnifier.png" width="25" height="25"alt="Лупа">Ищи</button>
+            </form>
+            <a href="#">
+                <img src="img/basket.png" width="38" height="38" alt="Корзина">
+            </a>
+        </div>
+        <div class="navigation">
+            <a href="index.html">Каталоги</a>
+            <a href="#">Категории</a>
+            <a href="#">Настройки</a>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Товары</h1>
+
+        <section>
+
+        </section>
+
+    </main>
+
+    <script>
+
+    async function filling() {
+
+        const requestURL = 'https://github.com/freemanvrn/learning-area/blob/main/items.json';
+        const request = new Request(requestURL);
+    
+        const response = await fetch(request);
+        const category = await response.json();
+
+        fillingProducts(category);
+
+    }
+
+        function fillingProducts(obj) {
+            const section = document.querySelector('section');
+            const items = obj.products;
+
+            for (const item of items) {
+                const myArticle = document.createElement('article');
+                const myPara1 = document.createElement('p');
+                const myPara2 = document.createElement('p');
+                const myH2 = document.createElement('h2');
+                const myPara3 = document.createElement('p');
+                const myPara4 = document.createElement('p');
+                const myPara5 = document.createElement('p');
+                const myPara6 = document.createElement('p');
+                const myPara7 = document.createElement('p');
+                const myPara8 = document.createElement('p');
+
+                myPara1.textContent = `Магазин: ${item.shop}`;
+                myPara2.textContent = `Категория товара: ${item.category}`;
+                myH2.textContent = `Наименование товара: ${item.name}`;
+                myPara3.textContent = `Вес/объем: ${item.weight}`;
+                myPara4.textContent = `Обычная цена: ${item.standard_price}`;
+                myPara5.textContent = `Промо-цена: ${item.promo_price}`;
+                myPara6.textContent = `Процент скидки: ${item.discount_percent}`;
+                myPara7.textContent = `Цена за кг/шт: ${item.price_per_kilo}`;
+                myPara8.textContent = `Скидка действует до: ${item.valid_thru}`;
+
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myPara4);
+                myArticle.appendChild(myPara5);
+                myArticle.appendChild(myPara6);
+                myArticle.appendChild(myPara7);
+                myArticle.appendChild(myPara8);
+
+                section.appendChild(myArticle);
+            }
+
+        }
+
+        filling();
+        
+    </script>
+
+</body>
+
+</html>
