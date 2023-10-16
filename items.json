@@ -9,7 +9,7 @@
             "weight" : "1 kg",
             "standard_price" : "14.90 GEL",
             "promo_price" : "11.90 GEL",
-            "discount_%" : "20.1",
+            "discount_percent" : "20.1",
             "price_per_kilo" : "11.90 GEL",
             "valid_thru" : "20/10/2023"
         },
@@ -20,7 +20,7 @@
             "weight" : "1 kg",
             "standard_price" : "49.90 GEL",
             "promo_price" : "65.90 GEL",
-            "discount_%" : "24.3",
+            "discount_percent" : "24.3",
             "price_per_kilo" : "49.90 GEL",
             "valid_thru" : "22/10/2023"
         },
@@ -31,7 +31,7 @@
             "weight" : "1 kg",
             "standard_price" : "21.90 GEL",
             "promo_price" : "16.90 GEL",
-            "discount_%" : "22.8",
+            "discount_percent" : "22.8",
             "price_per_kilo" : "16.90 GEL",
             "valid_thru" : "18/10/2023"
         }
